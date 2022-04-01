@@ -90,9 +90,9 @@ for (var i = 0; i<array.length; i++){
 return {"heads" : heads, "tails": tails}
 }
 
-var anArray = new Array("heads", "tails", "heads", "heads", "tails")
+//var anArray = new Array("heads", "tails", "heads", "heads", "tails")
 
-console.log(countFlips(anArray))
+//console.log(countFlips(anArray))
 
 /** Flip a coin!
  * 
@@ -107,8 +107,26 @@ console.log(countFlips(anArray))
 
 function flipACoin(call) {
 
+var result = ""
+var flip = ""
+var num = Math.random()
+
+if (num < 0.5){
+  flip = "heads"
+} else {
+  flip = "tails"
 }
 
+if (flip == call){
+  result = "win"
+} else {
+  result = "lose"
+}
+
+return {"call": call, "flip": flip, "result": result}
+}
+
+console.log(flipACoin("tails"))
 
 /** Export 
  * 
