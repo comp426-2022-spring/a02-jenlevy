@@ -126,9 +126,10 @@ if (flip == call){
 return {"call": call, "flip": flip, "result": result}
 }
 
-console.log(flipACoin("tails"))
+//console.log(flipACoin("tails"))
 
 /** Export 
  * 
  * Export all of your named functions
 */
+export {coinFlip, coinFlips, countFlips, flipACoin}
