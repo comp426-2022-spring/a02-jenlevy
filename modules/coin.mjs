@@ -87,10 +87,12 @@ for (var i = 0; i<array.length; i++){
     tails += 1
   }
 }
-return heads, tails
+return {"heads" : heads, "tails": tails}
 }
 
+var anArray = new Array("heads", "tails", "heads", "heads", "tails")
 
+console.log(countFlips(anArray))
 
 /** Flip a coin!
  * 
