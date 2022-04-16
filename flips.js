@@ -1,13 +1,20 @@
 import { coinFlips } from "./modules/coin.mjs";
 import minimist from "minimist";
+import { countFlips } from "./modules/coin.mjs";
 
 const args = minimist(process.argv.slice(2))
 args["number"]
 const number = args.number
 
+var flippity = coinFlips(number);
+
+
+
 if (number == null){
-    console.log(coinFlips(1))
-    throw new Error('No Input')
+    var oops = coinFlips(1)
+    console.log(oops)
+    console.log(countFlips(oops))
 } else {
-    console.log(coinFlips(number))
+    console.log(flippity)
+    console.log(countFlips(flippity))
 }
