@@ -11,7 +11,7 @@ var flipFlop = flipACoin(call)
 if (call == null){
     console.log("Error: no input")
 } else if(call != "heads" && call != "tails") {
-    console.log('Usage: node guess-flip --call=[heads||tails]')
+    console.log('Usage: node guess-flip --call=[heads|tails]')
 } else {
     console.log(flipFlop)
     
