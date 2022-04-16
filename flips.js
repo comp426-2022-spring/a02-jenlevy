@@ -7,6 +7,7 @@ const number = args.number
 
 if (number == null){
     console.log(coinFlips(1))
+    throw new Error('No Input')
 } else {
     console.log(coinFlips(number))
 }
